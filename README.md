@@ -1,150 +1,144 @@
 # 🚀 MAC Array RTL-to-GDSII ASIC Design Flow
 
-This repository documents my complete **RTL-to-GDSII implementation** of a parameterized **Multiply-Accumulate (MAC) Array** using industry-standard ASIC design tools.
+A complete **RTL-to-GDSII ASIC implementation** of a parameterized **Multiply-Accumulate (MAC) Array** using **Cadence Genus** and **Cadence Innovus**.
 
-The objective of this project is to understand and implement the complete digital ASIC design flow, starting from RTL design through synthesis, physical design, timing analysis, and finally GDSII generation.
+This repository demonstrates the complete digital ASIC design flow, beginning with **Verilog RTL Design** and concluding with **GDSII Stream-Out**, covering synthesis, physical design, timing analysis, and final layout generation.
 
 ---
 
-# 📌 Project Objective
+# 📌 Project Overview
 
-Design and implement a scalable **4-Channel MAC Array** using Verilog HDL and perform the complete ASIC implementation flow.
+The objective of this project is to gain hands-on experience with the complete ASIC implementation flow by designing and implementing a scalable **4-Channel MAC Array**.
 
-The project includes:
+The project covers every major stage of the backend ASIC design flow using industry-standard EDA tools.
 
-- RTL Design
-- Functional Verification
-- Logic Synthesis
-- Physical Design
-- Static Timing Analysis
-- GDSII Generation
+---
+
+# 🎯 Project Objectives
+
+- Design a parameterized MAC Array using Verilog HDL
+- Perform functional verification
+- Generate an optimized gate-level netlist
+- Complete ASIC Physical Design using Cadence Innovus
+- Perform Static Timing Analysis (STA)
+- Generate the final GDSII layout database
 
 ---
 
 # 🛠️ ASIC Design Flow
 
 ```
-RTL Design (Verilog)
+RTL Design (Verilog HDL)
         │
         ▼
-RTL Simulation (ModelSim/QuestaSim)
+Functional Verification
         │
         ▼
-Logic Synthesis (Yosys)
+Logic Synthesis (Cadence Genus)
         │
         ▼
-ASIC Logic Synthesis (Cadence Genus)
+Floorplanning
         │
         ▼
-Floorplanning (Cadence Innovus)
+Power Planning
         │
         ▼
-Placement
+Standard Cell Placement
         │
         ▼
 Clock Tree Synthesis (CTS)
         │
         ▼
-Routing
+Signal Routing
         │
         ▼
-Static Timing Analysis (STA)
+Post-Route Timing Analysis
         │
         ▼
-GDSII Generation
+GDSII Stream-Out
 ```
 
 ---
 
-# 📂 Repository Structure
+# 🧰 Tools & Technologies
 
-```
-MAC_ARRAY_RTL_to_GDSII
-│
-├── WEEK_1_Tools_Installation
-│
-├── WEEK_2_Simulation_Synthesis
-│
-├── WEEK_3_Cadence_Genus_Synthesis
-│
-├── WEEK_4_Cadence_Innovus_PnR
-│
-├── WEEK_5_Static_Timing_Analysis
-│
-└── WEEK_6_GDSII_Generation
-```
+| Category | Tool |
+|----------|------|
+| Hardware Description Language | Verilog HDL |
+| Logic Synthesis | Cadence Genus 20.1 |
+| Physical Design | Cadence Innovus 20.1 |
+| Operating System | Ubuntu Linux |
+| Version Control | Git & GitHub |
 
 ---
 
-# 🧰 Toolchain & Project Status
+# 📊 Project Status
 
-| Stage | Tool | Status |
-|--------|------|--------|
-| RTL Design | Verilog HDL | ✅ Completed |
-| RTL Simulation | ModelSim / QuestaSim | ✅ Completed |
-| Open-Source Logic Synthesis | Yosys | ✅ Completed |
-| ASIC Logic Synthesis | Cadence Genus 20.1 | ✅ Completed |
-| Floorplanning | Cadence Innovus | 🔄 In Progress |
-| Placement | Cadence Innovus | ⏳ Pending |
-| Clock Tree Synthesis | Cadence Innovus | ⏳ Pending |
-| Routing | Cadence Innovus | ⏳ Pending |
-| Static Timing Analysis | Innovus / Tempus | ⏳ Pending |
-| GDSII Generation | Cadence Innovus | ⏳ Pending |
-
----
-
-# 🎯 Features
-
-- Parameterized Verilog RTL
-- 4-Channel MAC Architecture
-- Sequential Multiply-Accumulate Operation
-- Gate-Level Netlist Generation
-- Timing Analysis
-- Area Analysis
-- Power Analysis
-- ASIC Physical Design Flow
+| Stage | Status |
+|--------|--------|
+| RTL Design | ✅ Completed |
+| Functional Verification | ✅ Completed |
+| Logic Synthesis | ✅ Completed |
+| Floorplanning | ✅ Completed |
+| Power Planning | ✅ Completed |
+| Standard Cell Placement | ✅ Completed |
+| Clock Tree Synthesis (CTS) | ✅ Completed |
+| Signal Routing | ✅ Completed |
+| Static Timing Analysis (STA) | ✅ Completed |
+| GDSII Stream-Out | ✅ Completed |
 
 ---
 
-# 📊 Current Progress
+# 🏆 Implementation Highlights
 
-- ✅ Tool Installation
-- ✅ RTL Coding
-- ✅ RTL Simulation
-- ✅ Yosys Synthesis
-- ✅ Cadence Genus Synthesis
-- 🔄 Cadence Innovus Physical Design
-- ⏳ Static Timing Analysis
-- ⏳ GDSII Generation
+- ✅ Complete RTL-to-GDSII ASIC implementation
+- ✅ Parameterized 4-Channel MAC Array
+- ✅ Logic Synthesis using Cadence Genus
+- ✅ Physical Design using Cadence Innovus
+- ✅ Floorplanning and Placement
+- ✅ Clock Tree Synthesis (CTS)
+- ✅ Signal Routing
+- ✅ Static Timing Analysis (STA)
+- ✅ Successful GDSII Generation
+- ✅ Professional GitHub Documentation
+
+---
+
+# 📈 Final Results
+
+| Parameter | Result |
+|-----------|--------|
+| RTL Verification | ✅ Passed |
+| Logic Synthesis | ✅ Successful |
+| Physical Design | ✅ Completed |
+| Setup Timing | ✅ Passed |
+| Hold Timing | ✅ Passed |
+| Routing Overflow | **0.00%** |
+| Design Rule Violations | **0** |
+| GDSII Generation | ✅ Successful |
 
 ---
 
 # 📚 Learning Outcomes
 
-Through this project I gained hands-on experience in:
+Through this project, I gained practical experience in:
 
 - Verilog RTL Design
-- Digital Logic Design
-- ASIC Synthesis Flow
-- Cadence Genus
-- Technology Mapping
+- Functional Verification
+- ASIC Logic Synthesis
 - Timing Constraints (SDC)
-- Timing Analysis
-- Area Optimization
-- Power Estimation
-- Physical Design Flow
-- ASIC Backend Design
+- Floorplanning
+- Power Planning
+- Standard Cell Placement
+- Clock Tree Synthesis (CTS)
+- Signal Routing
+- Static Timing Analysis (STA)
+- GDSII Stream-Out
+- RTL-to-GDSII ASIC Design Flow
+- Linux-Based EDA Workflow
 
 ---
 
-# 📌 Author
+# 🎯 Key Takeaways
 
-**Hemanth Kumar Narava**
-
-Electronics and Communication Engineering
-
-Aspiring VLSI Design Engineer
-
-RTL Design • ASIC Design • Physical Design • Digital IC Design
-
----
+This project provided hands-on exposure to the complete ASIC implementation flow using industry-standard Cadence tools. From RTL design to fabrication-ready GDSII generation, each stage was implemented and analyzed to understand modern digital IC physical design methodologies.
